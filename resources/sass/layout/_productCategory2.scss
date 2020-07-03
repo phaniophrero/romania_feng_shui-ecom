@@ -1,0 +1,115 @@
+/* Section 2 Products Category */
+#productCategories2 {
+    margin-top: 8rem;
+}
+
+.productContainer2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categoryImg-wrapper2 {
+    /* margin-left: -26rem; */
+    height: 20rem;
+    width: 30rem;
+    position: relative;
+}
+
+.categoryImage2 {
+    height: 100%;
+    width: 100%;
+    /*display: block;
+    margin: 0 auto; */
+    position: absolute;
+    top: -20%;
+    right: 28rem;
+    /* asa le faci sa inverseze ordinea */
+    margin-right: -4rem;
+    z-index: 1;
+}
+
+.bgSquareLeft1 {
+    height: 19rem;
+    width: 19rem;
+    background: linear-gradient(rgba($color-pink-light, .35), rgba($color-red-2, .35));
+    border-radius: 3rem;
+    position: relative;
+    bottom: 30rem;
+    left: 47rem;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transform: rotate(60deg);
+}
+
+.bgSquareLeft2 {
+    height: 8rem;
+    width: 8rem;
+    background: linear-gradient(rgba($color-primary-light-2, .35), rgba($color-primary-light-2, .35));
+    border-radius: 1.2rem;
+    position: relative;
+    top: -52rem;
+    left: 29rem;
+    z-index: -1;
+    transform: rotate(25deg);
+}
+
+.bgSquareLeft3 {
+    height: 6rem;
+    width: 6rem;
+    background: linear-gradient(rgba($color-orange-light, .35), rgba($color-pink-light-2, .35));
+    border-radius: .9rem;
+    position: relative;
+    top: -45rem;
+    left: 21rem;
+    z-index: -1;
+    transform: rotate(75deg);
+}
+
+.categoryDescription2 {
+    /*left: 10%;*/
+    width: 50rem;
+    margin-top: -8rem;
+    /* asa le faci sa inverseze ordinea */
+    margin-left: 21rem;
+    order: -1;
+    z-index: 1;
+}
+
+.categoryHeading2 {
+    font-size: 3.8rem;
+    margin-bottom: 2rem;
+    color: $color-gray-dark-2;
+}
+
+.categoryDetails2 {
+    font-size: 1.8rem;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    color: $color-gray-dark-3;
+}
+
+.categoryBtn2 {
+
+    &:link,
+    &:visited {
+        font-size: 1.8rem;
+        width: 12rem;
+        height: 3rem;
+        border-radius: 3rem;
+        background: $color-primary-light-1;
+        text-decoration: none;
+        color: $color-white;
+        padding: .8rem 2rem;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: $color-white;
+        background: $color-primary;
+        box-shadow: 0 .3rem 1rem rgba($color-primary-dark, .3);
+        transition: .2s;
+
+    }
+}

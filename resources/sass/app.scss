@@ -1,0 +1,54 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700,900');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+
+// Variables
+//base
+@import 'base/variables';
+@import 'base/base';
+@import 'base/mixins';
+
+//components
+@import 'components/hero';
+@import 'components/button';
+@import 'components/animations';
+@import 'components/typography';
+@import 'components/utilities';
+@import 'components/navMagazin';
+@import 'components/footer';
+@import 'components/scrollbar';
+@import 'components/searchbar';
+@import 'components/video';
+
+//layout
+@import 'layout/home';
+@import 'layout/students';
+@import 'layout/productCategory1';
+@import 'layout/productCategory2';
+@import 'layout/team';
+@import 'layout/cardsMagazin';
+@import 'layout/statueteMagazin';
+@import 'layout/amuleteMagazin';
+@import 'layout/bijuteriiMagazin';
+@import 'layout/oglinziMagazin';
+@import 'layout/stickersMagazin';
+@import 'layout/clopoteMagazin';
+@import 'layout/fantaniMagazin';
+@import 'layout/tablouriMagazin';
+@import 'layout/calendareMagazin';
+@import 'layout/betisoareMagazin';
+@import 'layout/accesoriiMagazin';
+
+
+
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';

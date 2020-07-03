@@ -1,0 +1,25 @@
+/* Cand pui steluta ' * ' se aplica la tot ce este in html */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Marimea scrisului in general pe site (ca default/) */
+/* Mai defineste si cat inseamna 1rem ex: 10px = 1rem */
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+/* Spatiul care il ocupa body-ul (box-sizing) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}

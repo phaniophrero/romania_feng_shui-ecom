@@ -1,0 +1,332 @@
+/* Butonul Afla mai multe */
+.btn-video {
+
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+
+        border: none;
+        cursor: pointer;
+        background-color: $color-white;
+    }
+
+    /* Buton umbra cand pui mouse-ul pe el */
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 2rem 3rem rgba($color-black, .4);
+
+        /* Buton animatie marire cand pui mouse-ul pe el */
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .4);
+    }
+
+    /* Buton Culori */
+    &--white {
+        background-color: $color-white;
+        color: $color-gray-dark;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+
+    /* Buton miscare animata care dispare */
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+}
+
+
+/* -- TABLETA -- Buton Video - Afla Mai Multe - */
+@media screen and (max-width: 768px) {
+    .btn-video {
+
+        &:link,
+        &:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            display: inline-block;
+            border-radius: 5rem;
+            transition: all .2s;
+            position: relative;
+            font-size: 1.3rem;
+
+            border: none;
+            cursor: pointer;
+            background-color: $color-white;
+        }
+
+        /* Buton umbra cand pui mouse-ul pe el */
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+            /* Buton animatie marire cand pui mouse-ul pe el */
+            &::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+        }
+
+        &:active {
+            transform: translateY(-1px);
+            box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+        }
+
+        /* Buton Culori */
+        &--white {
+            background-color: $color-white;
+            color: $color-gray-dark;
+
+            &::after {
+                background-color: $color-white;
+            }
+        }
+
+        &::after {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            border-radius: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all .4s;
+        }
+
+        /* Buton miscare animata care dispare */
+        &--animated {
+            animation: moveInBottom .5s ease-out .75s;
+            animation-fill-mode: backwards;
+        }
+    }
+}
+
+/* --  Sfarsit TABLETA -- Buton Video - Afla Mai Multe - */
+
+/* -- TELEFON -- Buton Video - Afla Mai Multe - */
+@media screen and (max-width: 320px) {
+    .btn-video {
+
+        &:link,
+        &:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: .8rem 1.6rem;
+            display: inline-block;
+            border-radius: 5rem;
+            transition: all .2s;
+            position: relative;
+            font-size: 1rem;
+
+            border: none;
+            cursor: pointer;
+            background-color: $color-white;
+        }
+
+        /* Buton umbra cand pui mouse-ul pe el */
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+            /* Buton animatie marire cand pui mouse-ul pe el */
+            &::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+        }
+
+        &:active {
+            transform: translateY(-1px);
+            box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+        }
+
+        /* Buton Culori */
+        &--white {
+            background-color: $color-white;
+            color: $color-gray-dark;
+
+            &::after {
+                background-color: $color-white;
+            }
+        }
+
+        &::after {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            border-radius: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all .4s;
+        }
+
+        /* Buton miscare animata care dispare */
+        &--animated {
+            animation: moveInBottom .5s ease-out .75s;
+            animation-fill-mode: backwards;
+        }
+    }
+}
+
+/* -- Sfarsit TELEFON -- Buton Video - Afla Mai Multe - */
+
+
+
+/* Buton Afla mai multe pentru Absolventi Recomandati */
+.btn-text {
+
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary;
+        padding: 3px;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+
+    }
+
+    &:active {
+        box-shadow: 0 0.5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+}
+
+
+/* -- Go to Top Button -- */
+.gotopbtn {
+    display: none;
+    position: fixed;
+    width: 5rem;
+    height: 5rem;
+    background: $color-primary;
+    border-radius: 3rem;
+    bottom: 9rem;
+    right: 5rem;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 5rem;
+    color: $color-white;
+    font-size: 2rem;
+    z-index: 100;
+}
+
+.gotopbtn:hover,
+.gotopbtn:focus {
+    color: $color-primary;
+    background: transparent;
+    border: .21rem solid $color-primary;
+}
+
+/* Animation Go to Top Button */
+.btnEntrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+}
+
+/* zoomIn */
+/*
+@keyframes btnEntrance {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    to {
+        opacity: 1;
+    }
+} */
+
+/* fadeInUp */
+@keyframes btnEntrance {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.btnExit {
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+    animation-name: btnExit;
+}
+
+/* zoomOut */
+/*
+@keyframes btnExit {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+} */
+
+/* fadeOutDown */
+@keyframes btnExit {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+/* -- Sfarsit Go to Top Button -- */

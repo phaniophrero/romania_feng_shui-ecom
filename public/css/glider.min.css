@@ -1,0 +1,330 @@
+.glider,
+.glider-contain {
+    margin: 0 auto;
+    position: relative;
+}
+
+.glider,
+.glider-track {
+    transform: translateZ(0)
+}
+
+.glider-dot,
+.glider-next,
+.glider-prev,
+.glider-next1,
+.glider-prev1,
+.glider-next2,
+.glider-prev2,
+.glider-next3,
+.glider-prev3,
+.glider-next4,
+.glider-prev4,
+.glider-next5,
+.glider-prev5,
+.glider-next6,
+.glider-prev6,
+.glider-next7,
+.glider-prev7,
+.glider-next8,
+.glider-prev8,
+.glider-next9,
+.glider-prev9,
+.glider-next10,
+.glider-prev10,
+.glider-next11,
+.glider-prev11,
+.glider-next12,
+.glider-prev12,
+.glider-next13,
+.glider-prev13 {
+    border: 0;
+    padding: 0;
+    user-select: none;
+    outline: 0;
+}
+
+.glider-dot:focus,
+.glider-next:focus,
+.glider-prev:focus,
+.glider-next1:focus,
+.glider-prev1:focus,
+.glider-next2:focus,
+.glider-prev2:focus,
+.glider-next3:focus,
+.glider-prev3:focus,
+.glider-next4:focus,
+.glider-prev4:focus,
+.glider-next5:focus,
+.glider-prev5:focus,
+.glider-next6:focus,
+.glider-prev6:focus,
+.glider-next7:focus,
+.glider-prev7:focus,
+.glider-next8:focus,
+.glider-prev8:focus,
+.glider-next9:focus,
+.glider-prev9:focus,
+.glider-next10:focus,
+.glider-prev10:focus,
+.glider-next11:focus,
+.glider-prev11:focus,
+.glider-next12:focus,
+.glider-prev12:focus,
+.glider-next13:focus,
+.glider-prev13:focus {
+    outline: 0;
+}
+
+.glider-contain {
+    width: 100%
+}
+
+.glider {
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none
+}
+
+.glider-track {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    z-index: 1
+}
+
+.glider.draggable {
+    user-select: none;
+    cursor: -webkit-grab;
+    cursor: grab
+}
+
+.glider.draggable .glider-slide img {
+    user-select: none;
+    pointer-events: none
+}
+
+.glider.drag {
+    cursor: -webkit-grabbing;
+    cursor: grabbing
+}
+
+.glider-slide {
+    user-select: none;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    min-width: 150px
+}
+
+.glider-slide img {
+    max-width: 100%
+}
+
+.glider::-webkit-scrollbar {
+    opacity: 0;
+    height: 0
+}
+
+.glider-next,
+.glider-prev,
+.glider-next1,
+.glider-prev1,
+.glider-next2,
+.glider-prev2,
+.glider-next3,
+.glider-prev3,
+.glider-next4,
+.glider-prev4,
+.glider-next5,
+.glider-prev5,
+.glider-next6,
+.glider-prev6,
+.glider-next7,
+.glider-prev7,
+.glider-next8,
+.glider-prev8,
+.glider-next9,
+.glider-prev9,
+.glider-next10,
+.glider-prev10,
+.glider-next11,
+.glider-prev11,
+.glider-next12,
+.glider-prev12,
+.glider-next13,
+.glider-prev13 {
+    position: absolute;
+    background: 0 0;
+    z-index: 2;
+    font-size: 40px;
+    text-decoration: none;
+    left: -23px;
+    top: 30%;
+    cursor: pointer;
+    color: #666;
+    opacity: 1;
+    line-height: 1;
+    transition: opacity .5s cubic-bezier(.17, .67, .83, .67), color .5s cubic-bezier(.17, .67, .83, .67)
+}
+
+.glider-next:focus,
+.glider-next:hover,
+.glider-prev:focus,
+.glider-prev:hover,
+.glider-next1:focus,
+.glider-next1:hover,
+.glider-prev1:focus,
+.glider-prev1:hover,
+.glider-next2:focus,
+.glider-next2:hover,
+.glider-prev2:focus,
+.glider-prev2:hover,
+.glider-next3:focus,
+.glider-next3:hover,
+.glider-prev3:focus,
+.glider-prev3:hover,
+.glider-next4:focus,
+.glider-next4:hover,
+.glider-prev4:focus,
+.glider-prev4:hover,
+.glider-next5:focus,
+.glider-next5:hover,
+.glider-prev5:focus,
+.glider-prev5:hover,
+.glider-next6:focus,
+.glider-next6:hover,
+.glider-prev6:focus,
+.glider-prev6:hover,
+.glider-next7:focus,
+.glider-next7:hover,
+.glider-prev7:focus,
+.glider-prev7:hover,
+.glider-next8:focus,
+.glider-next8:hover,
+.glider-prev8:focus,
+.glider-prev8:hover,
+.glider-next9:focus,
+.glider-next9:hover,
+.glider-prev9:focus,
+.glider-prev9:hover,
+.glider-next10:focus,
+.glider-next10:hover,
+.glider-prev10:focus,
+.glider-prev10:hover,
+.glider-next11:focus,
+.glider-next11:hover,
+.glider-prev11:focus,
+.glider-prev11:hover,
+.glider-next12:focus,
+.glider-next12:hover,
+.glider-prev12:focus,
+.glider-prev12:hover,
+.glider-next13:focus,
+.glider-next13:hover,
+.glider-prev13:focus,
+.glider-prev13:hover {
+    color: #ccc
+}
+
+.glider-next,
+.glider-next1,
+.glider-next2,
+.glider-next3,
+.glider-next4,
+.glider-next5,
+.glider-next6,
+.glider-next7,
+.glider-next8,
+.glider-next9,
+.glider-next10,
+.glider-next11,
+.glider-next12,
+.glider-next13 {
+    right: -23px;
+    left: auto
+}
+
+.glider-next.disabled,
+.glider-prev.disabled,
+.glider-next1.disabled,
+.glider-prev1.disabled,
+.glider-next2.disabled,
+.glider-prev2.disabled,
+.glider-next3.disabled,
+.glider-prev3.disabled,
+.glider-next4.disabled,
+.glider-prev4.disabled,
+.glider-next5.disabled,
+.glider-prev5.disabled,
+.glider-next6.disabled,
+.glider-prev6.disabled,
+.glider-next7.disabled,
+.glider-prev7.disabled,
+.glider-next8.disabled,
+.glider-prev8.disabled,
+.glider-next9.disabled,
+.glider-prev9.disabled,
+.glider-next10.disabled,
+.glider-prev10.disabled,
+.glider-next11.disabled,
+.glider-prev11.disabled,
+.glider-next12.disabled,
+.glider-prev12.disabled,
+.glider-next13.disabled,
+.glider-prev13.disabled {
+    opacity: .25;
+    color: #666;
+    cursor: default
+}
+
+.glider-hide {
+    opacity: 0
+}
+
+.glider-dots {
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0
+}
+
+.glider-dot {
+    display: block;
+    cursor: pointer;
+    color: #ccc;
+    border-radius: 999px;
+    background: #ccc;
+    width: 12px;
+    height: 12px;
+    margin: 7px
+}
+
+.glider-dot:focus,
+.glider-dot:hover {
+    background: #ddd
+}
+
+.glider-dot.active {
+    background: #a89cc8
+}
+
+@media(max-width:36em) {
+    .glider::-webkit-scrollbar {
+        opacity: 1;
+        -webkit-appearance: none;
+        width: 7px;
+        height: 3px
+    }
+
+    .glider::-webkit-scrollbar-thumb {
+        opacity: 1;
+        border-radius: 99px;
+        background-color: rgba(156, 156, 156, .25);
+        -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .25);
+        box-shadow: 0 0 1px rgba(255, 255, 255, .25)
+    }
+}

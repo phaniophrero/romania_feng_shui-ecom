@@ -1,0 +1,181 @@
+#productCategories {
+    margin-top: 20rem;
+}
+
+.productContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.categoryImg-wrapper {
+    /* margin-left: -26rem; */
+    height: 30rem;
+    width: 30rem;
+    position: relative;
+}
+
+
+.rombLeft {
+    width: 21rem;
+    height: 21rem;
+    border-radius: 3rem;
+    background: linear-gradient(rgba($color-pink, .35), rgba($color-primary-light-2, .35));
+    transform: rotateZ(45deg);
+    margin-top: 7rem;
+    position: relative;
+    z-index: -1;
+    box-shadow: .3rem .3rem 1rem rgba($color-primary-dark, .3);
+}
+
+.rombLeft2 {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 1.6rem;
+    background: linear-gradient(rgba($color-red-2, .35), rgba($color-pink-light, .45));
+    transform: rotateZ(45deg);
+    margin-top: -26rem;
+    margin-left: -3.5rem;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.rombLeft3 {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .6rem;
+    background: linear-gradient(rgba($color-primary-light-2, .35), rgba($color-pink-light, .45));
+    transform: rotateZ(45deg);
+    margin-top: 20rem;
+    margin-left: 26rem;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.rombLeft4 {
+    width: 1rem;
+    height: 1rem;
+    border-radius: .3rem;
+    background: linear-gradient(rgba($color-pink-light, .6), rgba($color-primary-light-2, .6));
+    transform: rotateZ(45deg);
+    margin-top: -5rem;
+    margin-left: 17rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.rombLeft5 {
+    width: .8rem;
+    height: .8rem;
+    border-radius: .15rem;
+    background: linear-gradient(rgba($color-pink-light, .6), rgba($color-primary-light-2, .6));
+    transform: rotateZ(45deg);
+    margin-top: -27rem;
+    margin-left: 20rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.rombLeft6 {
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: .4rem;
+    background: linear-gradient(rgba($color-primary-light-2, .6), rgba($color-primary-light-2, .6));
+    transform: rotateZ(45deg);
+    margin-top: 3rem;
+    margin-left: 17rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.categoryImage1 {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: -20%;
+    left: 14%;
+}
+
+.categoryDescription1 {
+    /*left: 10%;*/
+    width: 50rem;
+    margin-top: -8rem;
+}
+
+.categoryHeading {
+    font-size: 3.8rem;
+    margin-bottom: 2rem;
+    color: $color-gray-dark-2;
+}
+
+.categoryDetails {
+    font-size: 1.8rem;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    color: $color-gray-dark-3;
+}
+
+.categoryBtn {
+
+    &:link,
+    &:visited {
+        font-size: 1.8rem;
+        width: 12rem;
+        height: 3rem;
+        border-radius: 3rem;
+        background: $color-primary-light-1;
+        text-decoration: none;
+        color: $color-white;
+        padding: .8rem 2rem;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: $color-white;
+        background: $color-primary;
+        box-shadow: 0 .3rem 1rem rgba($color-primary-dark, .3);
+        transition: .2s;
+
+    }
+}
+
+
+.bgSquare1 {
+    height: 21rem;
+    width: 21rem;
+    background: linear-gradient(rgba($color-pink-light, .35), rgba($color-red-2, .35));
+    border-radius: 3rem;
+    position: absolute;
+    bottom: -94rem;
+    left: 77rem;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transform: rotate(25deg);
+}
+
+.bgSquare2 {
+    height: 8rem;
+    width: 8rem;
+    background: linear-gradient(rgba($color-primary-light-2, .35), rgba($color-primary-light-2, .35));
+    border-radius: 1.2rem;
+    position: relative;
+    top: -35rem;
+    left: 111rem;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+.bgSquare3 {
+    height: 7rem;
+    width: 7rem;
+    background: linear-gradient(rgba($color-orange-light, .35), rgba($color-pink-light-2, .35));
+    border-radius: .9rem;
+    position: relative;
+    top: -27rem;
+    left: 118rem;
+    z-index: -1;
+    transform: rotate(75deg);
+}

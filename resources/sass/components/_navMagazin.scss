@@ -1,0 +1,125 @@
+#navMagazin {
+    padding: 6rem 0;
+}
+
+.navbar-brand-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -2rem;
+    width: 10rem;
+
+    img {
+        width: 100%;
+    }
+}
+
+/* Heading Nav Magazin */
+section .navHeading-magazin {
+    display: flex;
+    width: 50rem;
+    margin: auto;
+    font-size: 2.6rem;
+    justify-content: center;
+    text-transform: uppercase;
+
+    &::after {
+        content: '';
+        width: 10rem;
+        height: .4rem;
+        background-color: $color-primary-light;
+        position: absolute;
+        margin-top: .6rem;
+        left: 50%;
+        transform: translate(-50%, 30px);
+        border-radius: 2rem;
+    }
+}
+
+.nav-slider-magazin {
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+
+.navContainer_magazin {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 21rem;
+    overflow: hidden;
+}
+
+.navContent-magazin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 4rem 0;
+    flex-direction: column;
+    height: 10rem;
+    width: 10rem;
+}
+
+.prevBtn-arrow,
+.nextBtn-arrow {
+    height: 18rem;
+    font-size: 2.8rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    i {
+        color: $color-gray-dark;
+
+        &:hover {
+            color: $color-gray-dark-2;
+        }
+    }
+}
+
+//Dots Slider
+.lSSlideOuter .lSPager.lSpg>li a {
+    background-color: $color-gray-dark !important;
+    border-radius: 30px;
+    display: inline-block;
+    height: 8px;
+    overflow: hidden;
+    text-indent: -999em;
+    width: 8px;
+    position: relative;
+    z-index: 99;
+    -webkit-transition: all 0.5s linear 0s;
+    transition: all 0.5s linear 0s;
+}
+
+.lSSlideOuter .lSPager.lSpg>li:hover a,
+.lSSlideOuter .lSPager.lSpg>li.active a {
+    background-color: $color-gray-dark-2 !important;
+}
+
+/* Nav Icon Wrapper */
+.navIcon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 8rem;
+    margin: 0 1rem;
+    background: linear-gradient(to bottom right, #F98FD9, #F5B0FF, #F28686);
+    border-radius: 50%;
+    border-style: solid;
+    border-color: $color-primary-light-2;
+    border-width: .3rem;
+}
+
+.navImg-wrapper {
+    width: 4rem;
+}
+
+.navImg-magazin {
+    width: 100%;
+}

@@ -1,0 +1,174 @@
+/* Fontul folosit in body cu culoare, grosime , padding */
+body {
+    // font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /*font-size: 16px;*/
+    line-height: 1.7;
+    color: $color-gray-dark;
+
+}
+
+
+/* Aici este h1 cu Titluri */
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 60px;
+
+
+    /* Titlul Cursuri Feng Shui(h1) (se pune ' & ' pentru a putea fi scris inauntru la .heading-primary si sa il scrii prescurtat in loc de .heading-primari--main)*/
+    &--main {
+        display: block;
+        font-size: 60px;
+        font-weight: 400;
+        letter-spacing: 9.8px;
+
+
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+
+        /*
+    animation-delay: 3s;
+    animation-interation-count: 3;
+    */
+    }
+
+    /* Sub Titlu Vrei sa devii maestru feng shui */
+    &--sub {
+        display: block;
+        font-size: 25px;
+        font-weight: 400;
+        letter-spacing: 9.8px;
+
+        animation: moveInRight 1s ease-out;
+    }
+
+}
+
+/* -- TABLETA -- Titlu Video Cursuri Feng Shui (h1) si Subtitlu Vrei sa devii maestru ? */
+@media screen and (max-width: 768px) {
+    .heading-primary {
+        color: $color-white;
+        text-transform: uppercase;
+
+        backface-visibility: hidden;
+        margin-bottom: 30px;
+
+        /* Titlul Cursuri Feng Shui(h1) (se pune ' & ' pentru a putea fi scris inauntru la .heading-primary si sa il scrii prescurtat in loc de .heading-primari--main)*/
+        &--main {
+            display: block;
+            font-size: 30px;
+            font-weight: 400;
+            letter-spacing: 6.4px;
+
+            animation-name: moveInLeft;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+
+            /*
+        animation-delay: 3s;
+        animation-interation-count: 3;
+        */
+        }
+
+        /* Sub Titlu Vrei sa devii maestru feng shui */
+        &--sub {
+            display: block;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 6.4px;
+
+            animation: moveInRight 1s ease-out;
+        }
+    }
+}
+
+/* -- Sfarsit TABLETA -- Titlu Video Cursuri Feng Shui (h1) si Subtitlu Vrei sa devii maestru ? */
+
+/* -- TELEFON -- Titlu Video Cursuri Feng Shui (h1) si Subtitlu Vrei sa devii maestru ? */
+@media screen and (max-width: 320px) {
+    .heading-primary {
+        color: $color-white;
+        text-transform: uppercase;
+
+        backface-visibility: hidden;
+        margin-bottom: 30px;
+
+        /* Titlul Cursuri Feng Shui(h1) (se pune ' & ' pentru a putea fi scris inauntru la .heading-primary si sa il scrii prescurtat in loc de .heading-primari--main)*/
+        &--main {
+            display: block;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 1px;
+
+            animation-name: moveInLeft;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+
+            /*
+        animation-delay: 3s;
+        animation-interation-count: 3;
+        */
+        }
+
+        /* Sub Titlu Vrei sa devii maestru feng shui */
+        &--sub {
+            display: block;
+            font-size: 10px;
+            font-weight: 400;
+            letter-spacing: 2px;
+
+            animation: moveInRight 1s ease-out;
+        }
+    }
+}
+
+/* -- Sfarsit TELEFON -- Titlu Video Cursuri Feng Shui (h1) si Subtitlu Vrei sa devii maestru ? */
+
+
+.heading-secondary {
+    padding-top: 1rem;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    /* Codul asta |-webkit-bg-clip| face ca culoarea din spate sa ia forma textului , dar daca nu scrii color : transparent nu merge */
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+
+    &:not(last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+.heading-contact {
+    font-weight: 600;
+    padding-top: 1rem;
+    margin-left: 12rem;
+}
+
+.heading-email {
+    font-weight: 600;
+    margin-left: 11rem;
+}

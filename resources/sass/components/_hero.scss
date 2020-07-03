@@ -1,0 +1,649 @@
+/*
+COLORS:
+
+Light Purple: #C532D9
+Medium Purple: #9E27B1
+Dark Purple: #601F8C
+
+*/
+
+.header {
+    margin: 0 auto;
+}
+
+.megaMenu_main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+/* Left Side Menu */
+.megaMenu_main ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.megaMenu_main ul a {
+    display: block;
+    color: $color-primary;
+    font-size: $default-font-size;
+}
+
+.megaMenu_main ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.megaMenu_main ul ul {
+    position: absolute;
+    top: 100%;
+    background: $color-white;
+    border-radius: 0 0 3rem 3rem;
+    padding: 2rem 0;
+    z-index: 100;
+    display: block;
+    visibility: hidden;
+}
+
+.megaMenu_main ul ul li {
+    width: 30rem;
+    padding: 0.6rem 1rem;
+}
+
+.megaMenu_main ul ul a {
+    color: $color-primary;
+    display: block;
+    padding: 0.6rem 1rem;
+}
+
+.megaMenu_main ul ul ul {
+    top: 0;
+    left: 90%;
+    height: auto;
+    border-radius: 0 0 3rem 0;
+    z-index: 100;
+}
+
+.megaMenu_main ul li:hover > ul {
+    visibility: visible;
+}
+
+.megaMenu_main > ul > li {
+    margin-right: 5rem;
+    position: relative;
+}
+
+.megaMenu_main > ul > li:last-child {
+    margin-right: 0;
+}
+
+.megaMenu_main > ul > li > a {
+    color: $color-primary;
+    padding: 1rem;
+    font-size: $default-font-size;
+    text-decoration: none;
+}
+
+/* END Left Side Menu */
+
+.subMenu_li:hover,
+.subMenu_li1:hover {
+    border-left: 0.3rem solid $color-primary-dark;
+    transition: 0.1s ease-out;
+}
+
+.megaMenu_link {
+    // font-family: 'Comfortaa', cursive;
+    font-size: 1.6rem !important;
+
+    &:hover {
+        color: $color-primary-dark;
+    }
+}
+
+.subMenu_link:hover,
+.subMenu_link1:hover,
+.subMenu_link3:hover {
+    text-decoration: none;
+
+    &:hover {
+        color: $color-primary-dark;
+    }
+}
+
+.subMenu_img {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 3rem;
+    left: 7rem;
+    height: 21rem;
+    width: 10rem;
+}
+
+.subMenu_btn {
+    height: 4rem;
+    width: 16rem;
+    color: $color-white !important;
+    background: $color-primary;
+    border-radius: 3rem;
+    padding: 0.6rem;
+    position: relative;
+    top: 7.5rem;
+    left: 5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+/* Bijuterii */
+.subMenu_img2 {
+    height: 12rem;
+    width: 21rem;
+    top: 9rem;
+    left: 1.5rem;
+}
+
+.subMenu_btn2 {
+    height: 4rem;
+    width: 16rem;
+    top: 16.5rem;
+    left: 5rem;
+}
+
+/* END Bijuterii */
+
+/* Carduri */
+.subMenu_img3 {
+    height: 21rem;
+    width: 13rem;
+    top: 3rem;
+    left: 5.5rem;
+}
+
+.subMenu_btn3 {
+    height: 4rem;
+    width: 16rem;
+    top: 7.5rem;
+    left: 5rem;
+}
+
+/* END Carduri */
+
+/* Calendare */
+.subMenu_img4 {
+    height: 16rem;
+    width: 16rem;
+    top: 6rem;
+    left: 4rem;
+}
+
+.subMenu_btn4 {
+    height: 4rem;
+    width: 16rem;
+    top: 12.5rem;
+    left: 5rem;
+}
+
+/* END Calendare */
+
+/* Fantani */
+.subMenu_img5 {
+    height: 16rem;
+    width: 16rem;
+    top: 6rem;
+    left: 4rem;
+}
+
+.subMenu_btn5 {
+    height: 4rem;
+    width: 16rem;
+    top: 12.5rem;
+    left: 5rem;
+}
+
+/* END Fantani */
+
+/* Tablouri */
+.subMenu_img6 {
+    height: 16rem;
+    width: 21rem;
+    top: 6rem;
+    left: 3rem;
+}
+
+.subMenu_btn6 {
+    height: 4rem;
+    width: 16rem;
+    top: 12.5rem;
+    left: 5rem;
+}
+
+/* END Tablouri */
+
+/* Betisoare */
+.subMenu_img7 {
+    height: 12rem;
+    width: 16rem;
+    top: 8rem;
+    left: 5rem;
+}
+
+.subMenu_btn7 {
+    height: 4rem;
+    width: 16rem;
+    top: 16.5rem;
+    left: 5rem;
+}
+
+/* END Betisoare */
+
+/* REMEDII */
+/* Sobolan */
+.subMenu_img8 {
+    height: 21rem;
+    width: 21rem;
+    top: 8rem;
+    left: 1rem;
+}
+
+.subMenu_btn8 {
+    height: 4rem;
+    width: 16rem;
+    top: 26.5rem;
+    left: 5rem;
+}
+
+/* END Sobolan */
+
+/* END REMEDII */
+
+/* Consultatii */
+.subMenu_img20 {
+    height: 17rem;
+    width: 17rem;
+    top: -2rem;
+    left: 3rem;
+}
+
+.subMenu_btn20 {
+    height: 4rem;
+    width: 16rem;
+    top: 0rem;
+    left: 5rem;
+}
+
+.subMenu_img21 {
+    height: 16rem;
+    width: 17rem;
+    top: 0;
+    left: 3rem;
+}
+
+.subMenu_btn21 {
+    height: 4rem;
+    width: 16rem;
+    top: 1rem;
+    left: 5rem;
+}
+
+/* END Consultatii */
+
+/* Right Menu */
+.megaMenu_ul2 {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.megaMenu_ul2 .megaMenu_li .megaMenu_link {
+    display: block;
+    color: $color-primary;
+    font-size: 1.8rem;
+    height: 6rem;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-primary-dark;
+        text-decoration: none;
+    }
+}
+
+/* Right Menu */
+
+.navbar-brand img {
+    width: 100px;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 6.5rem;
+}
+
+/* -- TABLETA -- Logo Nod Mistic Centru */
+@media screen and (max-width: 768px) {
+    .navbar-brand img {
+        width: 50px;
+    }
+}
+
+/* --  Sfarsit TABLETA -- Logo Nod Mistic Centru */
+
+/* -- TELEFON -- Logo Nod Mistic Centru */
+@media screen and (max-width: 320px) {
+    .navbar-brand img {
+        width: 50px;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1rem;
+    }
+}
+
+/* -- Sfarsit TELEFON -- Logo Nod Mistic Centru */
+
+/* -- LEFT Line Nav */
+.left-line {
+    margin-top: -0.3rem;
+    z-index: -1;
+    width: 730px;
+    height: 2px;
+    background-color: $color-primary;
+}
+
+/* -- LAPTOP Mare-- Linie Stanga */
+@media screen and (max-width: 1440px) {
+    .left-line {
+        margin-top: -0.3rem;
+        width: 660px;
+    }
+}
+
+/* -- Sfarsit LAPTOP Mare -- Linie Stanga */
+
+/* -- LAPTOP Mic -- Linie Stanga */
+@media screen and (max-width: 1024px) {
+    .left-line {
+        margin-top: -0.3rem;
+        width: 450px;
+    }
+}
+
+/* -- Sfarsit LAPTOP Mic -- Linie Stanga */
+
+/* -- TABLETA -- Linie Stanga */
+@media screen and (max-width: 768px) {
+    .left-line {
+        margin-top: -0.7rem;
+        width: 355px;
+    }
+}
+
+/* --  Sfarsit TABLETA -- Linie Stanga */
+
+/* -- TELEFON Large -- Linie Stanga */
+@media screen and (max-width: 425px) {
+    .left-line {
+        margin-top: -0.5rem;
+        width: 188px;
+    }
+}
+
+/* -- Sfarsit TELEFON Large -- Linie Stanga */
+
+/* -- TELEFON Mediu -- Linie Stanga */
+@media screen and (max-width: 375px) {
+    .left-line {
+        margin-top: -0.5rem;
+        width: 163px;
+    }
+}
+
+/* -- Sfarsit TELEFON Mediu -- Linie Stanga */
+
+/* -- TELEFON -- Linie Stanga */
+@media screen and (max-width: 320px) {
+    .left-line {
+        margin-top: -0.5rem;
+        width: 135px;
+    }
+}
+
+/* -- Sfarsit TELEFON -- Linie Stanga */
+
+/* -- Sfarsit LEFT Line Nav */
+
+/* -- RIGHT Line Nav */
+.right-line {
+    float: right;
+    margin-top: -0.2rem;
+    z-index: -1;
+    width: 730px;
+    height: 2px;
+    background-color: $color-primary;
+}
+
+/* -- LAPTOP Mare -- Linie Dreapta */
+@media screen and (max-width: 1440px) {
+    .right-line {
+        margin-top: -0.2rem;
+        width: 660px;
+    }
+}
+
+/* -- Sfarsit LAPTOP Mare -- Linie Dreapta */
+
+/* -- LAPTOP Mic -- Linie Dreapta */
+@media screen and (max-width: 1024px) {
+    .right-line {
+        margin-top: -0.2rem;
+        width: 450px;
+    }
+}
+
+/* -- Sfarsit LAPTOP Mic -- Linie Dreapta */
+
+/* -- TABLETA -- Linie Dreapta */
+@media screen and (max-width: 768px) {
+    .right-line {
+        margin-top: -0.2rem;
+        width: 355px;
+    }
+}
+
+/* --  Sfarsit TABLETA -- Linie Dreapta */
+
+/* -- TELEFON Large -- Linie Dreapta */
+@media screen and (max-width: 425px) {
+    .right-line {
+        margin-top: -0.3rem;
+        width: 178px;
+    }
+}
+
+/* -- Sfarsit TELEFON Large -- Linie Dreapta */
+
+/* -- TELEFON Mediu -- Linie Dreapta */
+@media screen and (max-width: 375px) {
+    .right-line {
+        margin-top: -0.3rem;
+        width: 153px;
+    }
+}
+
+/* -- Sfarsit TELEFON Mediu -- Linie Dreapta */
+
+/* -- TELEFON -- Linie Dreapta */
+@media screen and (max-width: 320px) {
+    .right-line {
+        margin-top: -0.3rem;
+        width: 125px;
+    }
+}
+
+/* -- Sfarsit TELEFON -- Linie Dreapta */
+
+/* -- Sfarsit RIGHT Line Nav */
+
+.navbar-brand2 {
+    margin-left: 21rem;
+}
+
+.logo-text {
+    width: 12rem;
+    margin-top: 2rem;
+}
+
+/* -- TABLETA -- Logo Romania Feng Shui Text Stanga Sus */
+@media screen and (max-width: 768px) {
+    .navbar-brand2 {
+        margin-left: 6rem;
+        top: 1rem;
+    }
+
+    .logo-text {
+        width: 100px;
+        margin-top: 1rem;
+    }
+}
+
+/* --  Sfarsit TABLETA -- Logo Romania Feng Shui Text Stanga Sus */
+
+/* --  TELEFON Large -- Logo Romania Feng Shui Text Stanga Sus */
+@media screen and (max-width: 425px) {
+    .navbar-brand2 {
+        display: none;
+    }
+
+    .logo-text {
+        width: 100px;
+        margin-top: 1rem;
+    }
+}
+
+/* -- Sfarsit TELEFON Large -- Logo Romania Feng Shui Text Stanga Sus */
+
+/* --  TELEFON Mediu -- Logo Romania Feng Shui Text Stanga Sus */
+@media screen and (max-width: 375px) {
+    .navbar-brand2 {
+        display: none;
+    }
+
+    .logo-text {
+        width: 100px;
+        margin-top: 1rem;
+    }
+}
+
+/* -- Sfarsit TELEFON Mediu -- Logo Romania Feng Shui Text Stanga Sus */
+
+/* -- TELEFON -- Logo Romania Feng Shui Text Stanga Sus */
+@media screen and (max-width: 320px) {
+    .navbar-brand2 {
+        display: none;
+    }
+
+    .logo-text {
+        width: 100px;
+        margin-top: 1rem;
+    }
+}
+
+/* -- Sfarsit TELEFON -- Logo Romania Feng Shui Text Stanga Sus */
+
+/* -- TELEFON Large -- Logo Romania Feng Shui Text Stanga Sus */
+@media screen and (max-width: 425px) {
+    .navbar {
+        padding: 1rem 0 !important;
+        margin-left: 1rem;
+        margin-right: 0;
+        font-size: 1.6rem;
+    }
+}
+
+/* -- Sfarsit TELEFON Large -- Logo Romania Feng Shui Text Stanga Sus */
+
+/* -- TELEFON Mediu -- Logo Romania Feng Shui Text Stanga Sus */
+@media screen and (max-width: 375px) {
+    .navbar {
+        padding: 1rem 0 !important;
+        margin-left: 1rem;
+        margin-right: 0;
+        font-size: 1.6rem;
+    }
+}
+
+/* -- Sfarsit TELEFON Mediu -- Logo Romania Feng Shui Text Stanga Sus */
+
+/* -- TELEFON -- Logo Romania Feng Shui Text Stanga Sus */
+@media screen and (max-width: 320px) {
+    .navbar {
+        padding: 1rem 0 !important;
+        margin-left: 1rem;
+        margin-right: 0;
+        font-size: 1.6rem;
+    }
+}
+
+/* -- END TELEFON -- Logo Romania Feng Shui Text Stanga Sus */
+
+/* --- MEGA MENU --- */
+
+/* --- END MEGA MENU --- */
+
+/* --- Banner VIDEO --- */
+.home-banner {
+    background-position: top;
+    background-size: cover;
+    margin-top: 6rem;
+    padding-top: 6rem;
+    height: 95vh;
+    position: relative;
+}
+
+/* -- TABLETA -- Banner Gradient Mov Forma fara colt dreapta jos */
+@media screen and (max-width: 768px) {
+    .home-banner {
+        background-position: top;
+        background-size: cover;
+        margin-top: 6rem;
+        padding-top: 6rem;
+        height: 95vh;
+        position: relative;
+    }
+}
+
+/* --  END TABLETA -- Banner Gradient Mov Forma fara colt dreapta jos */
+
+/* -- TELEFON -- Banner Gradient Mov Forma fara colt dreapta jos */
+@media screen and (max-width: 320px) {
+    .home-banner {
+        background-position: top;
+        background-size: cover;
+        margin-top: 6rem;
+        padding-top: 6rem;
+        height: 95vh;
+        position: relative;
+    }
+}
+
+/* -- END TELEFON -- Banner Gradient Mov Forma fara colt dreapta jos */
+
+/* --- END Banner VIDEO --- */
